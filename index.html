@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gudipati Umesh Portfolio</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonials</a>
+            </li>
+            -->
+            <li class="nav-item">
+              <a class="nav-link" href="#achievements">Achievements</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#contact" class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</a>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Gudipati Umesh</span>
+          </h2>
+          <p class="text-muted">
+           As a dedicated student at NIT WARANGAL,I am pursuing B.Tech in Electrical and Electronics Engineering with a minor in Computer Science Engineering,with expertise in
+            programming, web development, and problem-solving. Passionate about learning new technologies and building new projects.
+          </p>
+          <br>
+          <br>
+          <div class="coding-platforms mt-3">
+            <h3>Coding Profiles</h3>
+            <a href="https://leetcode.com/u/Gudipati_Umesh/" class="btn btn-outline-dark btn-sm me-2 mb-2" target="_blank"><i class="bi bi-code-slash"></i> LeetCode</a>
+            <a href="https://www.naukri.com/code360/profile/GudipatiUmesh" class="btn btn-outline-dark btn-sm me-2 mb-2" target="_blank"><i class="bi bi-lightning"></i> Coding-Ninjas</a>
+            <a href="https://www.geeksforgeeks.org/user/umeshgudiptnkr/" class="btn btn-outline-dark btn-sm me-2 mb-2" target="_blank"><i class="bi bi-journal-code"></i> GeeksforGeeks</a>
+            <a href="https://github.com/umesh530731" class="btn btn-outline-dark btn-sm me-2 mb-2" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+          </div>
+          <div class="mt-4 mb-1" style="font-size: 1.1rem; font-weight: 500; color: #3f396d;">Want to connect with me?</div>
+          <div class="d-flex flex-wrap gap-2 mt-2">
+            <a href="mailto:umeshgudipati530731@gmail.com" class="btn btn-outline-success btn-sm" style="font-weight: 500;"><i class="bi bi-envelope"></i> Mail Me</a>
+            <a href="https://www.linkedin.com/in/gudipati-umesh/" class="btn btn-outline-primary btn-sm" target="_blank" style="font-weight: 500;"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          </div>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block text-center">
+          <img src="images/myimage.jpeg" class="img-fluid rounded-circle shadow" alt="Gudipati Umesh profile photo" style="max-width: 320px; max-height: 320px; object-fit: cover; border: 6px solid #fca61f;" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- skills section starts -->
+    <section class="skills mt-5 py-5" id="skills">
+      <div class="heading text-center">
+        <small>My Skills</small>
+        <h3>Technical Skills & Expertise</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-3" data-aos="fade-up">
+          <div class="skill-card text-center p-4 border rounded">
+            <i class="bi bi-code-slash fs-1 text-primary mb-3"></i>
+            <h5 class="text">Programming Languages</h5>
+            <ul class="text-muted small list-unstyled mb-0">
+              <li><i class="bi bi-file-earmark-code me-1" title="C++"></i> C++</li>
+              <li><i class="bi bi-filetype-py me-1" title="Python"></i> Python</li>
+              <li><i class="bi bi-database me-1" title="SQL"></i> SQL</li>
+              <li><i class="bi bi-filetype-html me-1" title="HTML"></i> HTML</li>
+              <li><i class="bi bi-filetype-css me-1" title="CSS"></i> CSS</li>
+              <li><i class="bi bi-filetype-js me-1" title="JavaScript"></i> JavaScript</li>
+            </ul>
+            </div>
+            </div>
+        <div class="col-10 col-md-3" data-aos="fade-up">
+          <div class="skill-card text-center p-4 border rounded">
+            <i class="bi bi-people fs-1 text-primary mb-3"></i>
+            <h5 class="text">Soft Skills</h5>
+            <ul class="text-muted small list-unstyled mb-0">
+              <li>Problem Solving</li>
+              <li>Team Work</li>
+              <li>Time Management</li>
+              <li>Work Ethic</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-10 col-md-3" data-aos="fade-up">
+          <div class="skill-card text-center p-4 border rounded">
+            <i class="bi bi-book fs-1 text-primary mb-3"></i>
+            <h5 class="text">Coursework</h5>
+            <ul class="text-muted small list-unstyled mb-0">
+              <li>Problem Solving in C++</li>
+              <li>Data Structures & Algorithms</li>
+              <li>DBMS</li>
+              <li>OOP in C++</li>
+              <li>Python Programming</li>
+              <li>Operating Systems</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-10 col-md-3" data-aos="fade-up">
+          <div class="skill-card text-center p-4 border rounded">
+            <i class="bi bi-lightbulb fs-1 text-primary mb-3"></i>
+            <h5 class="text">ML WorkFlow</h5>
+            <ul class="text-muted small list-unstyled mb-0">
+              <li>Data Preprocessing(Pandas, Numpy)</li>
+              <li>Model Training(Scikit-learn, TensorFlow, Keras)</li>
+              <li>Model Evaluation</li>
+              <li>Model Deployment(Flask, Streamlit)</li>
+              <li>Model Optimization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends here -->
+
+    <!-- about section starts -->
+    <section class="about mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-8" data-aos="slide-up">
+          <div class="heading text-center">
+            <small>About Me</small>
+            <h3>Passionate B.Tech Student & Developer</h3>
+            <p class="text-muted">
+              Hi, I'm Gudipati Umesh, a passionate software engineer with a strong foundation in Web development and a keen interest in AI and machine learning. I love solving real-world problems through code and enjoy building scalable, efficient, and user-centric applications.
+              With experience in technologies like C++, Python, JavaScript, Flask, HTML, CSS, DBMS and SQL, I've worked on a variety of projects — from predictive ML models to dynamic web applications. I’m always curious, constantly learning, and eager to collaborate on innovative tech solutions.
+              Outside of coding, you'll often find me exploring new tools.
+
+            </p>
+            <a
+              href="Entry Level Web Developer Resume.pdf"
+              download="Gudipati_Umesh_Resume.pdf"
+              class="c-btn h-btn mt-3 py-3 px-5 rounded-pill"
+              style="text-decoration: none;color: #fff; display: inline-block;"
+            >
+              Download My Resume
+            </a>
+                </div>
+              </div>
+            </div>
+    </section>
+    <!-- about section ends here -->
+
+    <!-- education section starts -->
+    <section class="education-section py-5" id="education">
+      <div class="container">
+        <h2 class="fw-bold mb-5" style="color: #00fff7; font-size: 2.7rem;">Education</h2>
+        <div class="row justify-content-center g-4">
+          <div class="col-md-4">
+            <div class="edu-card p-4 h-100 rounded-4 shadow-sm">
+              <div class="mb-2"><i class="bi bi-mortarboard fs-2" style="color:#00fff7;"></i></div>
+              <h5 class="fw-bold mb-1">National Institute of Technology, Warangal</h5>
+              <div class="fw-semibold edu-degree">B.Tech in Electrical and Electronics Engineering</div>
+              <div class="mt-2 edu-highlight">Nov 2022 - Present</div>
+              <div class="edu-highlight">CGPA: 8.81</div>
+              <div class="fw-semibold edu-degree">Minor in Computer Science Engineering</div>
+              <div class="mt-2 edu-highlight">July 2023 - Present</div>
+              <div class="edu-highlight">CGPA: 8.50</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="edu-card p-4 h-100 rounded-4 shadow-sm">
+              <div class="mb-2"><i class="bi bi-house-door fs-2" style="color:#00fff7;"></i></div>
+              <h5 class="fw-bold mb-1">Dr.KKR's Gowtham Happy Valley School</h5>
+              <div class="fw-semibold edu-degree">Intermediate (MPC)</div>
+              <div>Central Board of Secondary Education</div>
+              <div class="mt-2 edu-highlight">June 2020 - July 2022</div>
+              <div class="edu-highlight">Percentage: 95.2</div>
+            </div>
+                </div>
+          <div class="col-md-4">
+            <div class="edu-card p-4 h-100 rounded-4 shadow-sm">
+              <div class="mb-2"><i class="bi bi-house-door fs-2" style="color:#00fff7;"></i></div>
+              <h5 class="fw-bold mb-1">Sri Chaitanya High School</h5>
+              <div class="fw-semibold edu-degree">Secondary School Certificate (SSC)</div>
+              <div>Board of Secondary Education, Andhra Pradesh</div>
+              <div class="mt-2 edu-highlight">June 2019 - May 2020</div>
+              <div class="edu-highlight">Percentage:100.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- education section ends here -->
+
+    <!-- projects section starts here -->
+    <section class="projects" id="projects">
+      <div class="heading text-center pt-5">
+        <small>My Projects</small>
+        <h3>Check My Projects</h3>
+      </div>
+
+
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/2048game.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">CGPA and SGPA Calculator</h4>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill">Tkinter</span>
+                <span class="badge bg-secondary badge-pill mb-2">GUI App</span><br />
+                <a href="#" class="btn btn-outline-dark btn-sm mt-2 me-2" target="_blank">GitHub</a>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Live Demo</a>
+                <div class="project-info mt-3 text-muted small"> Designed a graphical user interface (GUI) using Tkinter in Python, allowing students to input their subject grades
+                  and credits of the subjects and with reference to them the semester’s SGPA and CGPA are calculated.</div>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/smartcontrol.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Smart Control of Electric Appliances</h4>
+                <span class="badge bg-secondary badge-pill">HTML</span>
+                <span class="badge bg-secondary badge-pill">CSS</span>
+                <span class="badge bg-secondary badge-pill mb-2">IoT</span><br />
+                <a href="https://github.com/umesh530731/Smart-Control-of-Electric-Appliances-using-a-website" class="btn btn-outline-dark btn-sm mt-2 me-2" target="_blank">GitHub</a>
+                <a href="https://smart-control-of-electric-appliance.vercel.app/" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Live Demo</a>
+                <div class="project-info mt-3 text-muted small">A webpage has been developed that includes information about every classroom in our department as well as
+                  the schedule of classes.With the use of the Internet of Things, an example of smart control is demonstrated by
+                  connecting appliances to a shared internet network.</div>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/onlinecoding.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Online Coding Platform DataBase</h4>
+                <span class="badge bg-secondary badge-pill">SQL</span>
+                <span class="badge bg-secondary badge-pill">Database</span><br />
+                <a href="#" class="btn btn-outline-dark btn-sm mt-2 me-2" target="_blank">GitHub</a>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Live Demo</a>
+                <div class="project-info mt-3 text-muted small">A database was designed to practice problems on a coding website. It includes many features such as participating
+                  in contests that occur weekly, announcing results, practicing problems, and a store that helps them buy necessary
+                  goodies.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/emailspam.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Email Spam Detector</h4>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill">Naive Bayes Classifier</span>
+                <span class="badge bg-secondary badge-pill mb-2">Machine Learning</span><br />
+                <a href="https://github.com/umesh530731/Email_Spam_Detection-Naive-Bayes-Classifier-" class="btn btn-outline-dark btn-sm mt-2 me-2" target="_blank">GitHub</a>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Live Demo</a>
+                <div class="project-info mt-3 text-muted small">A Naive Bayes classifier was used to detect spam emails. The dataset was preprocessed, and the model was trained using the
+                  Naive Bayes algorithm. The model was evaluated using accuracy, precision, recall, and F1 score.</div>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/EVrange.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">EV Drive Range Estimator by ML Model</h4>
+                <span class="badge bg-secondary badge-pill">Python</span>
+                <span class="badge bg-secondary badge-pill">Machine Learning</span>
+                <span class="badge bg-secondary badge-pill">Linear Regression</span>
+                <span class="badge bg-secondary badge-pill mb-2">Supervised Learning</span><br />
+                <a href="https://github.com/umesh530731/EV-Range-Prediction-ML" class="btn btn-outline-dark btn-sm mt-2 me-2" target="_blank">GitHub</a>
+                <a href="#" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Live Demo</a>
+                <div class="project-info mt-3 text-muted small">A linear regression model was used to predict the range of an electric vehicle based on its battery capacity,
+                  speed, and other factors. The model was trained using the linear regression, Random Forest Regression and Random Forest Classifier,Decision Tree Regression. The model was evaluated using accuracy,Mean Absolute Error.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects section ends here -->
+
+    <!-- achievements section starts -->
+    <section class="achievements mt-5 pb-5" id="achievements">
+      <div class="heading text-center pt-5">
+        <small>My Achievements</small>
+        <h3>Achievements</h3>
+      </div>
+      <div class="timeline-container d-flex justify-content-center mt-4">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon bg-info text-white"><i class="bi bi-journal-text"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date text-info fw-bold">March 2022</span>
+              <div class="timeline-desc fw-semibold">Secured 95.2% in CBSE 12th Board</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon bg-info text-white"><i class="bi bi-graph-up"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date text-info fw-bold">April 2022</span>
+              <div class="timeline-desc fw-semibold">Secured 98.66 percentile in JEE Mains</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon bg-info text-white"><i class="bi bi-graph-up"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date text-info fw-bold">May 2022</span>
+              <div class="timeline-desc fw-semibold">Secured Top 5% in JEE Advanced Examination</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon bg-info text-white"><i class="bi bi-graph-up"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date text-info fw-bold">June 2022</span>
+              <div class="timeline-desc fw-semibold">Secured AIR 471 in APEAMCET</div>
+                </div>
+              </div>
+          <div class="timeline-item">
+            <div class="timeline-icon bg-info text-white"><i class="bi bi-trophy"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date text-info fw-bold">January 2023</span>
+              <div class="timeline-desc fw-semibold">Achieved Reliance Foundation Scholarship</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon bg-info text-white"><i class="bi bi-trophy"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date text-info fw-bold">2023-2024</span>
+              <div class="timeline-desc fw-semibold"> Earned Merit cum MeansScholarship issued by NITW for the top 10% of students</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon bg-info text-white"><i class="bi bi-award"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date text-info fw-bold">July 2025</span>
+              <div class="timeline-desc fw-semibold"> Selected among top teams nationwide for Amazon HackOn 2025 by clearing individual assessments
+                and advancing to the idea submission round.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- achievements section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>National Institute of Technology, Warangal, Telangana, India</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+91 6303746599</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>umeshgudipati530731@gmail.com</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>gu22eeb0b14@student.nitw.ac.in</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <form action="https://formspree.io/f/xqabrdrg" method="POST" class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                name="mobile"
+                placeholder="Mobile No."
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                name="message"
+                placeholder="Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </form>
+          <div class="form-success-message mt-3 text-success" style="display:none;">
+            Thank you for reaching out! Your message has been sent.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up"></h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#skills">Skills</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#projects">Projects</a>
+        <div class="vr"></div>
+        <a href="#achievements">Achievements</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button onclick="window.open('https://www.linkedin.com/in/gudipati-umesh/', '_blank')" class="rounded-pill linkedin" style="color: #0a66c2;">
+          <i class="bi bi-linkedin"></i>
+        </button>
+        <button onclick="window.open('https://github.com/umesh530731', '_blank')" class="rounded-pill github" style="color: #24292e;">
+          <i class="bi bi-github"></i>
+        </button>
+        <button onclick="window.open('https://www.instagram.com/umesh_chowdhary_gudipati/', '_blank')" class="rounded-pill instagram" style="color: #e4405f;">
+          <i class="bi bi-instagram"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2024 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
